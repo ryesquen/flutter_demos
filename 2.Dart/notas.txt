@@ -1,0 +1,90 @@
+void main() {
+  int empleados = 10;
+  print('${empleados}');
+
+  String pichi = 'no jojojo probando"ando 😍';
+
+  String caca = 'jejej probando"ando 😝';
+
+  bool sera = false;
+
+  if (!sera) {
+    print('${caca}');
+  } else {
+    print('${pichi}');
+  }
+  
+  List<int> numeros = [1,2,3,4];
+  print(numeros);
+  
+  List masNumeros = List(10); //tamaño fijo no se puede usar add
+    
+    print(masNumeros);
+  
+  List masNumeros2 = new List(10);
+    
+    print(masNumeros2);
+
+    Map<int, String> personas =
+  {
+    1: "pepito",
+    2:"juanito"
+  };
+  
+  personas.addAll(
+    {
+      666:'fulanito'
+    }
+  );
+  
+  print(personas);
+  print(personas[666]);
+}
+
+
+/*************************************************************************/ 
+
+main(){
+    print(saludar2("a tu pinche madre"));
+}
+
+String saludar(aquien){
+  //print('hola CTM');
+  return 'Hola CTM y a tu ${aquien}';
+  
+  
+}
+
+String saludar2(aquien) => 'Hola2 CTM y a tu ${aquien}';
+
+/********************************************************************************************************************/
+
+main(){
+  
+//  var heore = new Heroe();
+  // ya no es necesario el new
+    
+  //var heore =  Heroe();
+  
+  final renzo =  Heroe(poder:"comer", nombre: "Renzo Yesquén Herrera");
+
+  print(renzo.nombre);
+    print(renzo.poder);
+  print(renzo);
+
+}
+
+class Heroe{
+  String nombre;
+  String poder;
+  
+  Heroe({String nombre, String poder}){
+    this.nombre = nombre;
+    this.poder = poder;
+  }
+  
+  String toString(){
+    return '${this.nombre} - ${this.poder}';
+  }
+
+}
