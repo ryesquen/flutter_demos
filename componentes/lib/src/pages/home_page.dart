@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
       final widgetTemp = ListTile(
         title: Text(element['texto']),
         leading: Icon(Icons.accessibility, color: Colors.greenAccent),
-        trailing: Icon(Icons.keyboard_arrow_right, color: Colors.purple),
+        trailing: Icon(Icons.keyboard_arrow_right, color: Colors.tealAccent),
         onTap: () {
           print(Text(element['icon']));
         },
